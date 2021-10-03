@@ -20,11 +20,11 @@ function randomString(length) {
 
 async function getRandomPic() {
     try {
-        const res1 = await superagent.get(`https://robohash.org/${randomString(6)}`)
+        const res1 = await superagent.get(`https://robohash.org/${randomString(5)}`)
         console.log('Random image is ', res1.request.url)
-        const res2 = await superagent.get(`https://robohash.org/${randomString(6)}`)
+        const res2 = await superagent.get(`https://robohash.org/${randomString(5)}`)
         console.log('Random image is ', res2.request.url)
-        const res3 = await superagent.get(`https://robohash.org/${randomString(6)}`)
+        const res3 = await superagent.get(`https://robohash.org/${randomString(5)}`)
         console.log('Random image is ', res3.request.url)
 
         const all = await Promise.all([res1, res2, res3])
