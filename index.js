@@ -59,7 +59,7 @@ async function getRandomPic() {
 //         })
 //     })
 // }
-// superagent.get(`https://robohash.org/${randomString(6)}`)
+// superagent.get(`https://robohash.org/${randomString(5)}`)
 //     .end((err, res) => {
 //         console.log(res.request.url);
 //         return writeFilePromise('./randomImage.txt', res.request.url)
